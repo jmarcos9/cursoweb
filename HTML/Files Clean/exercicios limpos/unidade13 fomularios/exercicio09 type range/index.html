@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso HTML5 Essencial</title>
+        <script>
+            function mostrarResultado(){
+                document.getElementById("resultado").innerHTML = document.getElementById("ano").value;
+            }
+        </script>
+    </head>
+
+    <body>
+        <form action="index.html" method="post">
+            <input type="range" id="ano" min="1990" max="2020" value="1990" onchange="mostrarResultado()">
+            <span id="resultado"> </span>
+            
+        </form>
+    </body>
+</html>

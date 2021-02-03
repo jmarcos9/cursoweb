@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            let agora = new Date();
+            //cria uma arrey com nome dos meses
+            let meses = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];
+            
+            console.log(agora)//mostra data e hora horário padrao
+            console.log(agora.getFullYear());//mostra o ano
+            console.log(meses[agora.getMonth()]);//mostra o mês começãndo em 0 como janeiro e 11 dez
+            console.log(agora.getDate());//mostra o dia
+            console.log(agora.getDay());//mostra o dia da semana sendo 0 dom e 6 sab
+
+            console.log(agora.getDate() + " de " + meses[agora.getMonth()] + " de " + agora.getFullYear());
+
+            let aniversario = new Date (1981,1,9);
+            let diaSemana = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"]
+            console.log(diaSemana[aniversario.getDay()] + " " +agora.getDay()  + " " + " de " +  meses[agora.getMonth()] + 
+            " " + (agora.getFullYear() -aniversario.getFullYear()))
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

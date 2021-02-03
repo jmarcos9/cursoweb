@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title> 
+        
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+			$(function(e) {
+                //$("li:first").remove();
+                //$("li.especifico").remove();
+                //altera o conteudo.. no caso abaiso do ultimo, first ara primeiro ou identificar com class ou id
+                $("li:last").replaceWith("<li>Curso BootStrap Fundamental</li>");
+                //embaralhando a lista
+                $("ul").wrapAll("<div style='border:1px solid #Ccc'></div>")
+            })
+            
+            function divisao(valor,dividido){
+                return (valor/dividido).toFixed(2);
+            }
+            let resultado = divisao(3000,201);
+
+            console.log(resultado);
+		</script>        
+    </head>
+
+    <body>  
+		<ul>
+        		
+            <li>Curso HTML5 Essencial</li>
+            <li>Curso CSS3 Essencial</li>
+            <li class="especifico">Curso Javascript Essencial</li>
+            <li>Curso jQuery Fundamental</li>
+        </ul>
+        
+    </body>
+
+</html>
